@@ -1,153 +1,150 @@
-'use client'
-
-import React from 'react'
-import { Card, CardContent, CardHeader } from '../ui/card'
-import { CardDescription, CardTitle } from '../ui/card-hover-effect'
-import Link from 'next/link'
-import { Button } from '../ui/button'
+"use client"
+import { Card, CardContent, CardHeader } from "../ui/card"
+import { CardDescription, CardTitle } from "../ui/card-hover-effect"
+import Link from "next/link"
+import { Button } from "../ui/button"
 
 export const Footer = () => {
   return (
     <>
-   <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 mx-auto">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Us</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-purple-400">Get In Touch</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Have a project in mind? Let's discuss how we can help you achieve your goals.
-                </p>
-              </div>
+      <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Us</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-purple-400">Get In Touch</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Have a project in mind? Let&apos;s discuss how we can help you achieve your goals.
+              </p>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12 mt-12">
-              <div className="space-y-4">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Contact Information</CardTitle>
-                    <CardDescription>Reach out to us through any of these channels.</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start space-x-4">
-                      <div className="mt-0.5 rounded-full bg-muted p-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4 text-accent"
-                        >
-                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-sm font-medium leading-none">Phone</p>
-                        <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                      <div className="mt-0.5 rounded-full bg-muted p-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-4 w-4 text-accent"
-                        >
-                          <rect width="20" height="16" x="2" y="4" rx="2" />
-                          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </svg>
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-sm font-medium leading-none">Email</p>
-                        <p className="text-sm text-muted-foreground">archetech08@gmail.com</p>
-                      </div>
-                    </div>
-                    
-                  </CardContent>
-                </Card>
-              </div>
+          </div>
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12 mt-12">
+            <div className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Send Us a Message</CardTitle>
-                  <CardDescription>
-                    Fill out the form below and we'll get back to you as soon as possible.
-                  </CardDescription>
+                  <CardTitle>Contact Information</CardTitle>
+                  <CardDescription>Reach out to us through any of these channels.</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <form className="space-y-4">
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      <div className="space-y-2">
-                        <label
-                          htmlFor="first-name"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          First name
-                        </label>
-                        <input
-                          id="first-name"
-                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          placeholder="John"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label
-                          htmlFor="last-name"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Last name
-                        </label>
-                        <input
-                          id="last-name"
-                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                          placeholder="Doe"
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="email"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                <CardContent className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="mt-0.5 rounded-full bg-muted p-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-4 w-4 text-accent"
                       >
-                        Email
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="john.doe@example.com"
-                      />
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
                     </div>
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="message"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    <div className="space-y-1">
+                      <p className="text-sm font-medium leading-none">Phone</p>
+                      <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="mt-0.5 rounded-full bg-muted p-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-4 w-4 text-accent"
                       >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="Tell us about your project..."
-                      />
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
                     </div>
-                    <Button className="w-full bg-white hover:bg-white/50">Send Message</Button>
-                  </form>
+                    <div className="space-y-1">
+                      <p className="text-sm font-medium leading-none">Email</p>
+                      <p className="text-sm text-muted-foreground">archetech08@gmail.com</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Send Us a Message</CardTitle>
+                <CardDescription>
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="first-name"
+                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        First name
+                      </label>
+                      <input
+                        id="first-name"
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        placeholder="John"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="last-name"
+                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        Last name
+                      </label>
+                      <input
+                        id="last-name"
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        placeholder="Doe"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="john.doe@example.com"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="message"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="Tell us about your project..."
+                    />
+                  </div>
+                  <Button className="w-full bg-white hover:bg-white/50">Send Message</Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
-        </section>
+        </div>
+      </section>
 
       <footer className="w-full border-t bg-background py-6 md:py-8">
         <div className="container px-4 md:px-6 mx-auto">
@@ -294,6 +291,6 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-      </>
+    </>
   )
 }
