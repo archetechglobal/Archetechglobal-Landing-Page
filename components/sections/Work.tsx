@@ -11,7 +11,7 @@ export const Work = () => {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Our Work</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-purple-400">Featured Projects</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Take a look at some of our recent projects and see how we've helped our clients achieve their goals.
+                  Take a look at some of our recent projects and see how we&apos;ve helped our clients achieve their goals.
                 </p>
               </div>
               <div className='grid grid-cols-3'>
