@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
 import { Spotlight } from '../ui/spotlight'
+import Link from 'next/link'
 
 
 export const Hero = () => {
@@ -25,7 +26,7 @@ export const Hero = () => {
                             <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                         <Button size="lg" variant="outline">
-                            View Our Work
+                            <Link href={'#work'}>View Our Work</Link>
                         </Button>
                         
                     </div>
