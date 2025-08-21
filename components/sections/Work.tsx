@@ -16,8 +16,8 @@ export const Work = () => {
                   Take a look at some of our recent projects and see how we&apos;ve helped our clients achieve their goals.
                 </p>
               </div>
-              <div className='grid grid-row-3 md:grid-col-3 py-12 md:py-24'>
-                <PinContainer
+              <div className='left-0.5'>
+                {/* <PinContainer
         title="Portfolio of Yash"
         href="https://www.yash-reddy.com"
       >
@@ -32,8 +32,8 @@ export const Work = () => {
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
         </div>
-      </PinContainer>
-      <PinContainer
+      </PinContainer> */}
+      {/* <PinContainer
         title="/ui.aceternity.com"
         href="https://twitter.com/mannupaaji"
       >
@@ -96,7 +96,7 @@ export const Work = () => {
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
         </div>
-      </PinContainer>
+      </PinContainer> */}
               </div>
               <div className="flex justify-center mt-8">
               <Button variant="outline" className="gap-1 bg-transparent">
