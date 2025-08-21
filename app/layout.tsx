@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrostek.variable} ${dmSans.variable} font-sans antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
